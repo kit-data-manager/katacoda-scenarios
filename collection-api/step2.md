@@ -13,7 +13,7 @@ for illustration purposes:
     },
    "description": "Collection containing tutorial data"
    }
-]'`{{execute}}
+]' |json_pp`{{execute}}
 
 If we now list all collections, we should receive one element containing the 
 previously created collection:
