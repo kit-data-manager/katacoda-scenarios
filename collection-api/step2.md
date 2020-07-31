@@ -20,4 +20,9 @@ previously created collection:
 
 `curl http://localhost:8080/api/v1/collections/ |json_pp`{{execute}}
 
+Single collections we can also obtain using the 'id' we defined during the creation process:
+
+`curl http://localhost:8080/api/v1/collections/test123 |json_pp`{{execute}}
+
+If no 'id' was provided, a random UUID is assigned by the service and can be used in the same way.
 
