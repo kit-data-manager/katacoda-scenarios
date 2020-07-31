@@ -6,15 +6,15 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Setting up the Collection API Microservice",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Creating and Listing Collections",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Adding Member Items to a Collection",
         "text": "step3.md"
       },
       {
