@@ -11,7 +11,7 @@ It may take a while until the service has started. If you receive in the next ex
 
 Now, let's check how many collections we already have. This can be done via 'curl' as follows:
 
-`curl http://localhost:8080/api/v1/collections/`{{execute}}
+`curl http://localhost:8080/api/v1/collections/ |json_pp`{{execute}}
 
 It's not very surprising, that there is no collection, yet. Our next step will be to 
 create our first collection.
