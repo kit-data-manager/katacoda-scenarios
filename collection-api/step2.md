@@ -6,8 +6,7 @@ for illustration purposes:
 --header 'Content-Type: application/json' \
 --data-raw '[
     {
-        "id":"test123",
-    },
+    "id":"test123",
     "properties":{
         "ownership":"Katacoda Tutorial",
         "license": "CC-BY"
