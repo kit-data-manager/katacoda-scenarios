@@ -3,7 +3,7 @@ All attributes of a collection are optional, but for our example we add some of 
 for illustration purposes:
 
 `curl --location --request POST 'http://localhost:8080/api/v1/collections/' \
---header 'Content-Type: text/plain' \
+--header 'Content-Type: application/json' \
 --data-raw '[
     {
         "id":"test123",
