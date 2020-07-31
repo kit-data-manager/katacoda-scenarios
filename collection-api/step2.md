@@ -1,5 +1,3 @@
-## Creating and Listing Collections
-
 In order to create a new collection you need to send a POST request to the service. 
 All attributes of a collection are optional, but for our example we add some of them
 for illustration purposes:
