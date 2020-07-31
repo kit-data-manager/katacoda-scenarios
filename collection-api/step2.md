@@ -18,4 +18,6 @@ for illustration purposes:
 If we now list all collections, we should receive one element containing the 
 previously created collection:
 
-`curl http://localhost:8080/api/v1/collections/`{{execute}}
+`curl http://localhost:8080/api/v1/collections/ |json_pp`{{execute}}
+
+
