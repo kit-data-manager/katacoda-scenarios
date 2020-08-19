@@ -1,6 +1,6 @@
 # Interactive Katacoda Scenarios
 
-[![](http://shields.katacoda.com/katacoda/kit-data-manager/count.svg)](https://www.katacoda.com/kit-data-manager "Get your profile on Katacoda.com")
+[![](http://shields.katacoda.com/katacoda/kitdm/count.svg)](https://www.katacoda.com/kitdm "Get your profile on Katacoda.com")
 
 Visit https://www.katacoda.com/kit-data-manager to view the profile and interactive scenarios
 
