@@ -13,5 +13,4 @@ Now, let's check how many collections we already have. This can be done via 'cur
 
 `curl http://localhost:8080/api/v1/collections/ |json_pp`{{execute}}
 
-It's not very surprising, that there is no collection, yet. Our next step will be to 
-create our first collection.
+It's not very surprising, that there is no collection, yet. In the next steps, we will describe how to build up the example defined in the documentation (url of the documentation).
