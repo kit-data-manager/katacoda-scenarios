@@ -38,7 +38,7 @@ If no 'id' was provided, a random UUID is assigned by the service and can be use
 
 Now, by opening the link http://localhost:8080/static/overview.html in the browser, you can visualize the created collection and list all its attributes by selecting it as shown below:
 
-![experiment collection item](images/experimentCollection.png)
+![experiment collection item](https://github.com/sabrineChe/katacoda-scenarios/blob/master/collection-api/images/experimentCollection.png)
 
 ---
 
