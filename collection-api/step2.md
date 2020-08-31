@@ -38,8 +38,7 @@ If no 'id' was provided, a random UUID is assigned by the service and can be use
 
 Now, by opening the link http://localhost:8080/static/overview.html in the browser, you can visualize the created collection as shown below:
 
-.. figure:: images/experimentCollectionItem.png
-   :align: center
+![experiment collection item](images/experimentCollectionItem.png)
 
 ---
 
@@ -168,5 +167,4 @@ If we now list all collections, we should receive the six created collection:
 
 Moreover, an overview of the created collections can be visualized as show in the picture below:
 
-.. figure:: images/collectionsItems.png
-   :align: center
+![collection items](images/collectionsItems.png)
