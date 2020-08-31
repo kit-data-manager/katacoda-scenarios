@@ -36,7 +36,7 @@ Single collections we can also obtain using the 'id' we defined during the creat
 
 If no 'id' was provided, a random UUID is assigned by the service and can be used in the same way.
 
-Now, by opening the link http://localhost:8080/static/overview.html in the browser, you can visualize the created collection as shown below:
+Now, by opening the link http://localhost:8080/static/overview.html in the browser, you can visualize the created collection and list all its attributes by selecting it as shown below:
 
 ![experiment collection item](images/experimentCollectionItem.png)
 
