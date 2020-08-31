@@ -1,7 +1,6 @@
 Now we have to create and add member items to the corresponding collections.
 
 Create "images" item and add it to "rawData" collection:
-
 `curl --location --request POST 'http://localhost:8080/api/v1/collections/2780-a12-hj34/members/' \
 --header 'Content-Type: application/json' \
 --data-raw '[
