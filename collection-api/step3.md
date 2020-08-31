@@ -18,7 +18,7 @@ If we list the "rawData" collection with the id "2780-a12-hj34", the id "1134-f5
 
 Now, we can visualize also the added relationship between both collections, which is represented through an arrow:
 
-![Added rawData as a subcollection](images/rawdatasubcollection.png)
+![Added rawData as a subcollection](assets/rawdatasubcollection.png)
 
 Add "implementation" as a subcollection of "experiment" collection:
 `curl --location --request POST 'http://localhost:8080/api/v1/collections/1134-f53-67tr/members/' \
@@ -47,7 +47,7 @@ Now you can obtain all the subcollections included in the "experiment" collectio
 
 An overview of the collections and subcollections is shown below:
 
-![Subcollections of experiment collection](images/experimentSubcollections.png)
+![Subcollections of experiment collection](assets/experimentSubcollections.png)
 
 "Experiment" collection includes three subcollections: "rawData", "implementation" and "results". Now, we have to add both collections "result1" and "result2" as members to the "results" collection.
 
@@ -78,5 +78,5 @@ Now you can obtain all the subcollections included in the "results" collection u
 
 An overview of all collections and subcollections is shown below:
 
-![All subcollections of experiment collection](images/allexperimentsubcollections.png)
+![All subcollections of experiment collection](assets/allexperimentsubcollections.png)
 
