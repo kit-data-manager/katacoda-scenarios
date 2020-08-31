@@ -36,6 +36,11 @@ Single collections we can also obtain using the 'id' we defined during the creat
 
 If no 'id' was provided, a random UUID is assigned by the service and can be used in the same way.
 
+Now, by opening the link http://localhost:8080/static/overview.html in the browser, you can visualize the created collection as shown below:
+
+.. image:: images/experimentCollectionItem.png
+   :align: center
+
 ---
 
 The remaining collections can be created in the same way. 
@@ -160,3 +165,8 @@ Create collection "result2" with id "y123-b67-l1209"::
 
 If we now list all collections, we should receive the six created collection:
 `curl http://localhost:8080/api/v1/collections/ |json_pp`{{execute}}
+
+Moreover, an overview of the created collections can be visualized as show in the picture below:
+
+.. image:: images/collectionsItems.png
+   :align: center
