@@ -17,7 +17,7 @@ Create "images" item and add it to "rawData" collection:
 
 The item "images" is created and added to "rawData" collection as shown in figure below:
 
-![images item](images/imagesItem.png)
+![images item](assets/imagesItem.png)
 
 As the item "method1" is a shared member of two collections: "implementation" and "result1". We have to create the item and have only to change the id of the collection in the the POST request.
 
@@ -53,7 +53,7 @@ Create Create "method1" item and add it to "result1" collection:
 
 "method1" item is added to both subcollections "implementation" and "result1" as shown below:
 
-![method1 item](images/method1Item.png)
+![method1 item](assets/method1Item.png)
 
 Now, we will create the "method2" item and add it in the same way to "implementation" and "result2" collections.
 
@@ -87,7 +87,7 @@ Create "method2" item and add it to "result2" collection:
 
 "method2" item is added to both subcollections "implementation" and "result2" as shown below:
 
-![method2 item](images/method2Item.png)
+![method2 item](assets/method2Item.png)
 
 Using the same POSt request, we add the items "documents1" and "documents2" to the corresponding collections.
 
@@ -121,7 +121,7 @@ Create "documents2" item and add it to "result2" collection:
 
 Now, a complete overview of the collections and collection items is shown below:
 
-![complete overview](images/completeExample.png)
+![complete overview](assets/completeExample.png)
 
 Now you can access to each collection and check if the items were added correctly:
 Access collection "rawData":
