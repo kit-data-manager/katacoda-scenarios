@@ -1,4 +1,6 @@
-In order to create a new collection you need to send a POST request to the service. 
+Now, we will try to build up an example of Collection API, which is defined more in details under the following link: https://kit-dm-documentation.readthedocs.io/en/latest/. The example defines a data set of an experiment, which should be published. The set includes raw data, implementation and results. These collections are sub-collections of the “experiment” collection. The „rawData“ collection includes „images“ item. The „implementation“ collection contains two items: „method1“ and „method2“. The „results“ collection includes in turn two subcollections „result1“ and „result2“. The „result1“ collection contains two items: „documents“ and „method1“, which is the same item of the „implementation“ collection. The „result2“ collection contains again two items: „documents“ and „method2“, which is the same item of the „implementation“ collection.
+
+Now, we will build up this example. In order to create a new collection you need to send a POST request to the service. 
 All attributes of a collection are optional, but for our example we add some of them
 for illustration purposes. We begin by creating the first collection called "experiment" with id "1134-f53-67tr":
 
