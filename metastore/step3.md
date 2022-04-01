@@ -10,6 +10,7 @@ before explaining the mandatory properties, let's first create the metadata reco
 ```
 cat << EOF > metadata-record.json
 {
+    "id":"my_first_document",
     "relatedResource": {
         "identifier": "anyResourceId",
         "identifierType": "INTERNAL"
@@ -40,6 +41,9 @@ instance holding the particular schema.
 `schemaVersion` identifies a specific version of the selected schema. For our tutorial, we did not apply
 any update to the schema we've created. Thus, the schema version is still 1.
 
+For our tutorial, we also assign the `id` property in order to be able to retrieve the document later on. 
+However, if you omit this property, an internal UUID will be assigned by MetaStore.
+
 After having a metadata record, we now create a metadata document which we want to upload:
 
 ```
@@ -61,8 +65,12 @@ endpoint of MetaStore:
 --form 'document=@metadata-document.json' |json_pp
 `{{execute}}
 
-Great, if we now list all metadata documents for the relatedResource with id `anyResourceId`, we can see the metadata we've just uploaded:
+Great, if we now list all metadata records for the relatedResource with id `anyResourceId`, we can see the entry we've just uploaded:
 
 `curl --location --request GET 'http://localhost:8040/api/v1/metadata/?relatedResourceId=anyResourceId' \
---header 'Accept: application/vnd.datamanager.schema-record+json' |json_pp`{{execute}}
+--header 'Accept: application/vnd.datamanager.metadata-record+json' |json_pp`{{execute}}
 
+Instead, if we want to obtain the metadata document itself, we have to use the `id` of the record: 
+
+`curl --location --request GET 'http://localhost:8040/api/v1/metadata/my_first_document' \
+--header 'Accept: application/json' |json_pp`{{execute}}
