@@ -5,7 +5,7 @@ At first, create an instance of the collection-api service by running docker
 ---
 
 **NOTE**
-It may take a while until the service has started. If you receive in the next execution step, please try again after a couple of seconds.
+It may take a while until the service has started. If you receive an error in the next execution step, please try again after a couple of seconds.
 
 ---
 

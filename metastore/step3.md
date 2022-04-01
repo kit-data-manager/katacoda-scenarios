@@ -56,7 +56,7 @@ That's it, our first metadata document which should comply with the schema we re
 Let's check, if MetaStore accepts our inputs by sending a POST request to the metadata repository
 endpoint of MetaStore:
 
-`curl 'http://localhost:8040/api/v1/metadata' -i -X POST \
+`curl 'http://localhost:8040/api/v1/metadata/' -i -X POST \
     -H 'Content-Type: multipart/form-data' \
     -F 'schema=@metadata-document.json;type=application/json' \
     -F 'record=@metadata-record.json;type=application/json' |json_pp
