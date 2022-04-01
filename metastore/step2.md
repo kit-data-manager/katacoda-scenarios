@@ -26,7 +26,7 @@ complex schemas.
 ```
 cat << EOF > metadata-schema.json
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "title": "Person",
   "description": "A simple person schema",
   "type": "object",

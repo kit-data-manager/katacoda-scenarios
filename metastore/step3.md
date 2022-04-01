@@ -56,12 +56,12 @@ That's it, our first metadata document which should comply with the schema we re
 Let's check, if MetaStore accepts our inputs by sending a POST request to the metadata repository
 endpoint of MetaStore:
 
-`curl 'http://localhost:8040/api/v1/metadata/' -i -X POST \
-    -H 'Content-Type: multipart/form-data' \
-    -F 'schema=@metadata-document.json;type=application/json' \
-    -F 'record=@metadata-record.json;type=application/json' |json_pp
+`curl --location --request POST 'http://localhost:8040/api/v1/metadata/' \
+--header 'Content-Type: application/json' \
+--form 'record=@metadata-record.json' \
+--form 'document=@metadata-document.json' |json_pp
 `{{execute}}
 
 Great, if we now list all metadata documents for the relatedResource with id `anyResourceId`, we can see the metadata we've just uploaded:
 
-`curl 'http://localhost:8040/api/v1/metadata?id=anyResourceId' -i -X GET |json_pp`{{execute}}
+`curl 'http://localhost:8040/api/v1/metadata/?id=anyResourceId' -i -X GET |json_pp`{{execute}}
