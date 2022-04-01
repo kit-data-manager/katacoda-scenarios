@@ -1,6 +1,6 @@
 At first, create an instance of MetaStore by running docker 
 
-`docker run -d -p 8040:8040 kitdm/metastore:latest`{{execute}}
+`docker run -d -p 8040:8040 kitdm/metastore2:latest`{{execute}}
 
 ---
 

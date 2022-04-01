@@ -52,10 +52,9 @@ EOF
 Now, that we have both input files create, we can use them to register our first schema in MetaStore.
 Therefor, we send a POST request to the endpoint of the schema registry component of MetaStore:
 
-`curl 'http://localhost:8040/api/v1/schemas/' -i -X POST \
-    -H 'Content-Type: multipart/form-data' \
-    -F 'schema=@metadata-schema.json;type=application/json' \
-    -F 'record=@schema-record.json;type=application/json' |json_pp
+`curl --location --request POST 'http://localhost:8040/api/v1/schemas/' \
+--form 'record=@schema-record.json' \
+--form 'schema=@metadata-schema.json' |json_pp
 `{{execute}}
 
 If we now list schemas, we should obtain a schema with id 'my_first_schema' as result:

@@ -64,4 +64,4 @@ endpoint of MetaStore:
 
 Great, if we now list all metadata documents for the relatedResource with id `anyResourceId`, we can see the metadata we've just uploaded:
 
-`curl 'http://localhost:8040/api/v1/metadata/?id=anyResourceId' -i -X GET |json_pp`{{execute}}
+`curl 'http://localhost:8040/api/v1/metadata/?relatedResourceId=anyResourceId' -i -X GET |json_pp`{{execute}}
