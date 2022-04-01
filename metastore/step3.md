@@ -57,7 +57,6 @@ Let's check, if MetaStore accepts our inputs by sending a POST request to the me
 endpoint of MetaStore:
 
 `curl --location --request POST 'http://localhost:8040/api/v1/metadata/' \
---header 'Content-Type: application/json' \
 --form 'record=@metadata-record.json' \
 --form 'document=@metadata-document.json' |json_pp
 `{{execute}}
