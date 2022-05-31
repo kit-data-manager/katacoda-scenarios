@@ -1,10 +1,13 @@
-# Interactive Katacoda Scenarios
+# Interactive Killercoda Scenarios
 
-[![](http://shields.katacoda.com/katacoda/kitdm/count.svg)](https://www.katacoda.com/kitdm "Get your profile on Katacoda.com")
+~Visit https://www.katacoda.com/kitdm to view the profile and interactive scenarios~
 
-Visit https://www.katacoda.com/kitdm to view the profile and interactive scenarios
+As of June 15 Katacoda won't be available for public access any more. All tutorials have been moved to 
+
+https://killercoda.com/0d38ffbe-8e9d-494b-b04a-fddaae6537fa
+
+and remain accessible also in future.
 
 ### Writing Scenarios
-Visit https://www.katacoda.com/docs to learn more about creating Katacoda scenarios
 
 For examples, visit https://github.com/katacoda/scenario-example
