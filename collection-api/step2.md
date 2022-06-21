@@ -2,7 +2,7 @@ Now, we will try to build up an example of Collection API,
 which is defined more in details under the following link: https://kit-dm-documentation.readthedocs.io/en/latest/. 
 The example defines a data set of an experiment, which should be published. 
 The set includes raw data, implementation and results. 
-These collections are sub-collections of the â€œexperimentâ€? collection. 
+These collections are sub-collections of the "experiment" collection. 
 The `rawData` collection includes `images` item. 
 The `implementation` collection contains two items: `method1` and `method2`. 
 The `results` collection includes in turn two subcollections `result1` and `result2`. 
@@ -14,8 +14,9 @@ Now, we will build up this example. In order to create a new collection you need
 All attributes of a collection are optional, but for our example we add some of them
 for illustration purposes. We begin by creating the first collection called "experiment" with id "1134-f53-67tr":
 
-`curl --location --request POST 'http://localhost:8080/api/v1/collections/' \
---header 'Content-Type: application/json' \
+```bash
+curl --location --request POST 'http://localhost:8080/api/v1/collections/'
+--header 'Content-Type: application/json'
 --data-raw '[
     {
     "id":"1134-f53-67tr",
@@ -35,16 +36,21 @@ for illustration purposes. We begin by creating the first collection called "exp
     },
    "description": "experiment collection"
    }
-]' |json_pp`{{execute}}
+]' |json_pp 
+```{{exec}}
 
 If we now list all collections, we should receive one element containing the 
 previously created collection:
 
-`curl http://localhost:8080/api/v1/collections/ |json_pp`{{execute}}
+```bash
+curl http://localhost:8080/api/v1/collections/ |json_pp
+```{{exec}}
 
 Single collections we can also obtain using the 'id' we defined during the creation process:
 
-`curl http://localhost:8080/api/v1/collections/1134-f53-67tr |json_pp`{{execute}}
+```bash
+curl http://localhost:8080/api/v1/collections/1134-f53-67tr |json_pp
+```{{exec}}
 
 If no 'id' was provided, a random UUID is assigned by the service and can be used in the same way.
 
@@ -57,8 +63,10 @@ Now, by opening the link http://localhost:8080/static/overview.html in the brows
 The remaining collections can be created in the same way. 
 
 Create collection "rawData" with id "2780-a12-hj34":
-`curl --location --request POST 'http://localhost:8080/api/v1/collections/' \
---header 'Content-Type: application/json' \
+
+```bash
+curl --location --request POST 'http://localhost:8080/api/v1/collections/' 
+--header 'Content-Type: application/json' 
 --data-raw '[
     {
     "id":"2780-a12-hj34",
@@ -77,12 +85,15 @@ Create collection "rawData" with id "2780-a12-hj34":
     },
    "description": "raw data collection"
    }
-]' |json_pp`{{execute}}
+]' |json_pp
+```{{exec}}
 
 
 Create collection "implementation" with id "4567-a12-gz89":
-`curl --location --request POST 'http://localhost:8080/api/v1/collections/' \
---header 'Content-Type: application/json' \
+
+```bash
+curl --location --request POST 'http://localhost:8080/api/v1/collections/' 
+--header 'Content-Type: application/json' 
 --data-raw '[
     {
     "id":"4567-a12-gz89",
@@ -101,11 +112,14 @@ Create collection "implementation" with id "4567-a12-gz89":
     },
    "description": "implementation collection"
    }
-]' |json_pp`{{execute}}
+]' |json_pp
+```{{exec}}
 
 Create collection "results" with id "0846-m51-jd00":
-`curl --location --request POST 'http://localhost:8080/api/v1/collections/' \
---header 'Content-Type: application/json' \
+
+```bash
+curl --location --request POST 'http://localhost:8080/api/v1/collections/' 
+--header 'Content-Type: application/json' 
 --data-raw '[
     {
     "id":"0846-m51-jd00",
@@ -124,11 +138,14 @@ Create collection "results" with id "0846-m51-jd00":
     },
    "description": "results collection"
    }
-]' |json_pp`{{execute}}
+]' |json_pp
+```{{exec}}
 
 Create collection "result1" with id "q345-a12-bn45":
-`curl --location --request POST 'http://localhost:8080/api/v1/collections/' \
---header 'Content-Type: application/json' \
+
+```bash
+curl --location --request POST 'http://localhost:8080/api/v1/collections/' 
+--header 'Content-Type: application/json' 
 --data-raw '[
     {
     "id":"q345-a12-bn45",
@@ -148,11 +165,14 @@ Create collection "result1" with id "q345-a12-bn45":
     },
    "description": "result1 collection"
    }
-]' |json_pp`{{execute}}
+]' |json_pp
+```{{exec}}
 
-Create collection "result2" with id "y123-b67-l1209"::
-`curl --location --request POST 'http://localhost:8080/api/v1/collections/' \
---header 'Content-Type: application/json' \
+Create collection "result2" with id "y123-b67-l1209":
+
+```bash
+curl --location --request POST 'http://localhost:8080/api/v1/collections/' 
+--header 'Content-Type: application/json' 
 --data-raw '[
     {
     "id":"y123-b67-l1209",
@@ -172,10 +192,14 @@ Create collection "result2" with id "y123-b67-l1209"::
     },
    "description": "result2 collection"
    }
-]' |json_pp`{{execute}}
+]' |json_pp
+```{{exec}}
 
 If we now list all collections, we should receive the six created collection:
-`curl http://localhost:8080/api/v1/collections/ |json_pp`{{execute}}
+
+```bash
+curl http://localhost:8080/api/v1/collections/ |json_pp
+```{{exec}}
 
 Moreover, an overview of the created collections can be visualized as show in the picture below:
 
