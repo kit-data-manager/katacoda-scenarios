@@ -5,14 +5,14 @@ Now, we will register our first metadata schema to MetaStore. Therefor, we need 
 
 For the metadata record, we have to provide two properties shown in the following file:
 
-```
+```bash
 cat << EOF > schema-record.json
 {
   "schemaId" : "my_first_schema",
   "type" : "JSON"
 }
 EOF
-```{{execute}}
+```{{exec}}
 
 The first property is the ID by which the schema can be used later on, the second property 
 states, that we want to provide a JSON schema. The type defines the validator which is used 
@@ -23,7 +23,7 @@ After creating the first input, we now need the actual schema. According to our 
 it has to be a JSON schema. For this tutorial, we use a very simple schema even though MetaStore supports
 complex schemas.
 
-```
+```bash
 cat << EOF > metadata-schema.json
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
@@ -47,16 +47,17 @@ cat << EOF > metadata-schema.json
   "required": [ "givenName", "familyName" ]
 }
 EOF
-```{{execute}}
+```{{exec}}
 
 Now, that we have both input files create, we can use them to register our first schema in MetaStore.
 Therefor, we send a POST request to the endpoint of the schema registry component of MetaStore:
 
-`curl --location --request POST 'http://localhost:8040/api/v1/schemas/' \
---form 'record=@schema-record.json' \
---form 'schema=@metadata-schema.json' |json_pp
-`{{execute}}
+```bash
+curl --location --request POST 'http://localhost:8040/api/v1/schemas/' --form 'record=@schema-record.json' --form 'schema=@metadata-schema.json' |json_pp
+```{{exec}}
 
 If we now list schemas, we should obtain a schema with id 'my_first_schema' as result:
 
-`curl http://localhost:8040/api/v1/schemas/ |json_pp`{{execute}}
+```bash
+curl http://localhost:8040/api/v1/schemas/ |json_pp
+```{{exec}}

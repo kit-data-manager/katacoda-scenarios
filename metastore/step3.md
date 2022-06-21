@@ -7,7 +7,7 @@ for our first metadata document. Also here, we need two inputs, which are:
 The metadata record is slightly different from the one for the metadata schema, but
 before explaining the mandatory properties, let's first create the metadata record:
 
-```
+```bash
 cat << EOF > metadata-record.json
 {
     "id":"my_first_document",
@@ -22,7 +22,7 @@ cat << EOF > metadata-record.json
     "schemaVersion": 1
 }
 EOF
-```{{execute}}
+```{{exec}}
 
 There are three main properties: 
 
@@ -46,7 +46,7 @@ However, if you omit this property, an internal UUID will be assigned by MetaSto
 
 After having a metadata record, we now create a metadata document which we want to upload:
 
-```
+```bash
 cat << EOF > metadata-document.json
 {
 "givenName": "John",
@@ -54,13 +54,12 @@ cat << EOF > metadata-document.json
 "age": 42
 }
 EOF
-```{{execute}}
+```{{exec}}
 
 That's it, our first metadata document which should comply with the schema we registered before.  
 Let's check, if MetaStore accepts our inputs by sending a POST request to the metadata repository
 endpoint of MetaStore:
 
-`curl --location --request POST 'http://localhost:8040/api/v1/metadata/' \
---form 'record=@metadata-record.json' \
---form 'document=@metadata-document.json' |json_pp
-`{{execute}}
+```bash
+curl --location --request POST 'http://localhost:8040/api/v1/metadata/' --form 'record=@metadata-record.json' --form 'document=@metadata-document.json' |json_pp
+```{{exec}}
