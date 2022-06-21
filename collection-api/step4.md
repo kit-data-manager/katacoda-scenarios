@@ -1,9 +1,9 @@
 Now we have to create and add member items to the corresponding collections.
 
 Create "images" item and add it to "rawData" collection:
-`curl --location --request POST 'http://localhost:8080/api/v1/collections/2780-a12-hj34/members/' \
---header 'Content-Type: application/json' \
---data-raw '[
+
+```bash
+curl --location --request POST 'http://localhost:8080/api/v1/collections/2780-a12-hj34/members/' --header 'Content-Type: application/json' --data-raw '[
     {
     "id":"1104fg7340up",
     "location": "https://s3.amazonaws.com/1104fg7340up",
@@ -13,7 +13,8 @@ Create "images" item and add it to "rawData" collection:
         "index": 0
       }
     }
-]' |json_pp`{{execute}}
+]' |json_pp
+```{{exec}}
 
 The item "images" is created and added to "rawData" collection as shown in figure below:
 
@@ -22,9 +23,9 @@ The item "images" is created and added to "rawData" collection as shown in figur
 As the item "method1" is a shared member of two collections: "implementation" and "result1". We have to create the item and have only to change the id of the collection in the the POST request.
 
 Create Create "method1" item and add it to "implementation" collection:
-`curl --location --request POST 'http://localhost:8080/api/v1/collections/4567-a12-gz89/members/' \
---header 'Content-Type: application/json' \
---data-raw '[
+
+```bash
+curl --location --request POST 'http://localhost:8080/api/v1/collections/4567-a12-gz89/members/' --header 'Content-Type: application/json' --data-raw '[
     {
     "id":"1104-as89gh23",
     "location": "https://s3.amazonaws.com/1104-as89gh23",
@@ -34,12 +35,13 @@ Create Create "method1" item and add it to "implementation" collection:
         "index": 0
       }
     }
-]' |json_pp`{{execute}}
+]' |json_pp
+```{{exec}}
 
 Create Create "method1" item and add it to "result1" collection:
-`curl --location --request POST 'http://localhost:8080/api/v1/collections/q345-a12-bn45/members/' \
---header 'Content-Type: application/json' \
---data-raw '[
+
+```bash
+curl --location --request POST 'http://localhost:8080/api/v1/collections/q345-a12-bn45/members/' --header 'Content-Type: application/json' --data-raw '[
     {
     "id":"1104-as89gh23",
     "location": "https://s3.amazonaws.com/1104-as89gh23",
@@ -49,7 +51,8 @@ Create Create "method1" item and add it to "result1" collection:
         "index": 0
       }
     }
-]' |json_pp`{{execute}}
+]' |json_pp
+```{{exec}}
 
 "method1" item is added to both subcollections "implementation" and "result1" as shown below:
 
@@ -58,9 +61,9 @@ Create Create "method1" item and add it to "result1" collection:
 Now, we will create the "method2" item and add it in the same way to "implementation" and "result2" collections.
 
 Create "method2" item and add it to "implementation" collection:
-`curl --location --request POST 'http://localhost:8080/api/v1/collections/4567-a12-gz89/members/' \
---header 'Content-Type: application/json' \
---data-raw '[
+
+```bash
+curl --location --request POST 'http://localhost:8080/api/v1/collections/4567-a12-gz89/members/' --header 'Content-Type: application/json' --data-raw '[
     {
     "id":"1104-fi23hxl89aq",
     "location": "https://s3.amazonaws.com/1104-fi23hxl89aq",
@@ -69,12 +72,13 @@ Create "method2" item and add it to "implementation" collection:
         "index": 1
       }
     }
-]' |json_pp`{{execute}}
+]' |json_pp
+```{{exec}}
 
 Create "method2" item and add it to "result2" collection:
-`curl --location --request POST 'http://localhost:8080/api/v1/collections/y123-b67-l1209/members/' \
---header 'Content-Type: application/json' \
---data-raw '[
+
+```bash
+curl --location --request POST 'http://localhost:8080/api/v1/collections/y123-b67-l1209/members/' --header 'Content-Type: application/json' --data-raw '[
     {
     "id":"1104-fi23hxl89aq",
     "location": "https://s3.amazonaws.com/1104-fi23hxl89aq",
@@ -83,7 +87,8 @@ Create "method2" item and add it to "result2" collection:
         "index": 1
       }
     }
-]' |json_pp`{{execute}}
+]' |json_pp
+```{{exec}}
 
 "method2" item is added to both subcollections "implementation" and "result2" as shown below:
 
@@ -92,9 +97,9 @@ Create "method2" item and add it to "result2" collection:
 Using the same POSt request, we add the items "documents1" and "documents2" to the corresponding collections.
 
 Create "documents1" item and add it to "result1" collection:
-`curl --location --request POST 'http://localhost:8080/api/v1/collections/q345-a12-bn45/members/' \
---header 'Content-Type: application/json' \
---data-raw '[
+
+```bash
+curl --location --request POST 'http://localhost:8080/api/v1/collections/q345-a12-bn45/members/' --header 'Content-Type: application/json' --data-raw '[
     {
     "id":"0089-xy45smq4",
     "location": "https://s3.amazonaws.com/0089-xy45smq4",
@@ -103,12 +108,13 @@ Create "documents1" item and add it to "result1" collection:
         "index": 1
       }
     }
-]' |json_pp`{{execute}}
+]' |json_pp
+```{{exec}}
 
 Create "documents2" item and add it to "result2" collection:
-`curl --location --request POST 'http://localhost:8080/api/v1/collections/y123-b67-l1209/members/' \
---header 'Content-Type: application/json' \
---data-raw '[
+
+```bash
+curl --location --request POST 'http://localhost:8080/api/v1/collections/y123-b67-l1209/members/' --header 'Content-Type: application/json' --data-raw '[
     {
     "id":"1700-gp19aiz38ry",
     "location": "https://s3.amazonaws.com/1700-gp19aiz38ry",
@@ -117,7 +123,8 @@ Create "documents2" item and add it to "result2" collection:
         "index": 0
       }
     }
-]' |json_pp`{{execute}}
+]' |json_pp
+```{{exec}}
 
 Now, a complete overview of the collections and collection items is shown below:
 
@@ -125,13 +132,25 @@ Now, a complete overview of the collections and collection items is shown below:
 
 Now you can access to each collection and check if the items were added correctly:
 Access collection "rawData":
-`curl http://localhost:8080/api/v1/collections/2780-a12-hj34 |json_pp`{{execute}}
+
+```bash
+curl http://localhost:8080/api/v1/collections/2780-a12-hj34 |json_pp
+```{{exec}}
 
 Access collection "implementation":
-`curl http://localhost:8080/api/v1/collections/4567-a12-gz89 |json_pp`{{execute}}
+
+```bash
+curl http://localhost:8080/api/v1/collections/4567-a12-gz89 |json_pp
+```{{exec}}
 
 Access collection "result1":
-`curl http://localhost:8080/api/v1/collections/q345-a12-bn45 |json_pp`{{execute}}
+
+```bash
+curl http://localhost:8080/api/v1/collections/q345-a12-bn45 |json_pp
+```{{exec}}
 
 Access collection "result2":
-`curl http://localhost:8080/api/v1/collections/y123-b67-l1209 |json_pp`{{execute}}
+
+```bash
+curl http://localhost:8080/api/v1/collections/y123-b67-l1209 |json_pp
+```{{exec}}
