@@ -18,7 +18,7 @@ curl --location --request POST 'http://localhost:8080/api/v1/collections/2780-a1
 
 The item "images" is created and added to "rawData" collection as shown in figure below:
 
-![images item](assets/imagesItem.png)
+![images item](./assets/imagesItem.png)
 
 As the item "method1" is a shared member of two collections: "implementation" and "result1". We have to create the item and have only to change the id of the collection in the the POST request.
 
@@ -56,7 +56,7 @@ curl --location --request POST 'http://localhost:8080/api/v1/collections/q345-a1
 
 "method1" item is added to both subcollections "implementation" and "result1" as shown below:
 
-![method1 item](assets/method1Item.png)
+![method1 item](./assets/method1Item.png)
 
 Now, we will create the "method2" item and add it in the same way to "implementation" and "result2" collections.
 
@@ -92,7 +92,7 @@ curl --location --request POST 'http://localhost:8080/api/v1/collections/y123-b6
 
 "method2" item is added to both subcollections "implementation" and "result2" as shown below:
 
-![method2 item](assets/method2Item.png)
+![method2 item](./assets/method2Item.png)
 
 Using the same POSt request, we add the items "documents1" and "documents2" to the corresponding collections.
 
@@ -128,7 +128,7 @@ curl --location --request POST 'http://localhost:8080/api/v1/collections/y123-b6
 
 Now, a complete overview of the collections and collection items is shown below:
 
-![complete overview](assets/completeExample.png)
+![complete overview](./assets/completeExample.png)
 
 Now you can access to each collection and check if the items were added correctly:
 Access collection "rawData":

@@ -26,7 +26,7 @@ curl http://localhost:8080/api/v1/collections/2780-a12-hj34 |json_pp
 
 Now, we can visualize also the added relationship between both collections, which is represented through an arrow:
 
-![Added rawData as a subcollection](assets/rawdatasubcollection.png)
+![Added rawData as a subcollection](./assets/rawdatasubcollection.png)
 
 Add "implementation" as a subcollection of "experiment" collection:
 
@@ -60,7 +60,7 @@ curl http://localhost:8080/api/v1/collections/1134-f53-67tr |json_pp
 
 An overview of the collections and subcollections is shown below:
 
-![Subcollections of experiment collection](assets/experimentSubcollections.png)
+![Subcollections of experiment collection](./assets/experimentSubcollections.png)
 
 "Experiment" collection includes three subcollections: "rawData", "implementation" and "results". Now, we have to add both collections "result1" and "result2" as members to the "results" collection.
 
@@ -96,4 +96,4 @@ curl http://localhost:8080/api/v1/collections/0846-m51-jd00 |json_pp
 
 An overview of all collections and subcollections is shown below:
 
-![All subcollections of experiment collection](assets/allexperimentsubcollections.png)
+![All subcollections of experiment collection](./assets/allexperimentsubcollections.png)
