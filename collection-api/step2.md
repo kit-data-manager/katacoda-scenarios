@@ -15,8 +15,7 @@ All attributes of a collection are optional, but for our example we add some of 
 for illustration purposes. We begin by creating the first collection called "experiment" with id "1134-f53-67tr":
 
 ```bash
-curl --location --request POST 'http://localhost:8080/api/v1/collections/'
---header 'Content-Type: application/json' --data-raw '[
+curl --location --request POST 'http://localhost:8080/api/v1/collections/' --header 'Content-Type: application/json' --data-raw '[
     {
     "id":"1134-f53-67tr",
     "capabilities":{
@@ -64,8 +63,7 @@ The remaining collections can be created in the same way.
 Create collection "rawData" with id "2780-a12-hj34":
 
 ```bash
-curl --location --request POST 'http://localhost:8080/api/v1/collections/' 
---header 'Content-Type: application/json' --data-raw '[
+curl --location --request POST 'http://localhost:8080/api/v1/collections/' --header 'Content-Type: application/json' --data-raw '[
     {
     "id":"2780-a12-hj34",
     "capabilities":{
@@ -90,8 +88,7 @@ curl --location --request POST 'http://localhost:8080/api/v1/collections/'
 Create collection "implementation" with id "4567-a12-gz89":
 
 ```bash
-curl --location --request POST 'http://localhost:8080/api/v1/collections/' 
---header 'Content-Type: application/json' --data-raw '[
+curl --location --request POST 'http://localhost:8080/api/v1/collections/' --header 'Content-Type: application/json' --data-raw '[
     {
     "id":"4567-a12-gz89",
     "capabilities":{
@@ -115,8 +112,7 @@ curl --location --request POST 'http://localhost:8080/api/v1/collections/'
 Create collection "results" with id "0846-m51-jd00":
 
 ```bash
-curl --location --request POST 'http://localhost:8080/api/v1/collections/' 
---header 'Content-Type: application/json' --data-raw '[
+curl --location --request POST 'http://localhost:8080/api/v1/collections/' --header 'Content-Type: application/json' --data-raw '[
     {
     "id":"0846-m51-jd00",
     "capabilities":{
@@ -140,8 +136,7 @@ curl --location --request POST 'http://localhost:8080/api/v1/collections/'
 Create collection "result1" with id "q345-a12-bn45":
 
 ```bash
-curl --location --request POST 'http://localhost:8080/api/v1/collections/' 
---header 'Content-Type: application/json' --data-raw '[
+curl --location --request POST 'http://localhost:8080/api/v1/collections/' --header 'Content-Type: application/json' --data-raw '[
     {
     "id":"q345-a12-bn45",
     "capabilities":{
@@ -166,8 +161,7 @@ curl --location --request POST 'http://localhost:8080/api/v1/collections/'
 Create collection "result2" with id "y123-b67-l1209":
 
 ```bash
-curl --location --request POST 'http://localhost:8080/api/v1/collections/' 
---header 'Content-Type: application/json' --data-raw '[
+curl --location --request POST 'http://localhost:8080/api/v1/collections/' --header 'Content-Type: application/json' --data-raw '[
     {
     "id":"y123-b67-l1209",
     "capabilities":{
