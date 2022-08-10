@@ -1,0 +1,34 @@
+{
+  "title": "MetaStore Tutorial",
+  "description": "Short tutorial describing the basics of the MetaStore service for registering the first metadata schema and document",
+  "difficulty": "Beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Setting up the MetaStore Microservice",
+        "text": "step1.md"
+      },
+      {
+        "title": "Registering a Metadata Schema",
+        "text": "step2.md"
+      },
+      {
+        "title": "Registering a Metadata Document",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+        "imageid": "ubuntu"
+   }
+}
