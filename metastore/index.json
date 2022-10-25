@@ -4,6 +4,11 @@
   "difficulty": "Beginner",
   "time": "15 minutes",
   "details": {
+    "assets": {
+      "host01": [
+        {"file" : "example_file.json", "target": "/usr/local/bin/", "chmod": "+x"}
+      ]
+    }
     "steps": [
       {
         "title": "Setting up the MetaStore Microservice",
