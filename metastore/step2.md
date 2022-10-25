@@ -1,16 +1,17 @@
-Now, we will register our first metadata schema to MetaStore. Therefore, we need two inputs:
+Now, we will register our first metadata schema to MetaStore. Therefor, we need two inputs:
 
 1. A schema's metadata record containing basic administrative metadata.
 2. The schema itself.
 
-For the metadata record, we have to provide two properties, which are shown in the file `schema-record.json`. We can view this file:
+For the metadata record, we have to provide two properties shown in the following file:
 
 ```bash
-cat schema-record.json
+cat << EOF > schema-record.json
 {
   "schemaId" : "my_first_schema",
   "type" : "JSON"
 }
+EOF
 ```{{exec}}
 
 The first property is the ID by which the schema can be used later on, the second property 
