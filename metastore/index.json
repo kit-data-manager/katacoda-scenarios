@@ -20,8 +20,8 @@
     ],
     "assets": {
       "host01": [
-        {"file": "test_file.txt", "target": "/root/filesystem/usr/local/bin", "chmod": "+w"},
-        {"file": "example_file.json", "target": "/root/filesystem/usr/local/bin", "chmod": "+w"}
+        {"file": "schema-record.json", "target": "/root/filesystem/usr/local/bin", "chmod": "+w"},
+        {"file": "pp13-basic-schema.json", "target": "/root/filesystem/usr/local/bin", "chmod": "+w"}
       ]
   },
     "intro": {
