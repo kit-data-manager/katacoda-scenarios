@@ -24,6 +24,7 @@ As expected, an empty result set is returned. The same is the case for listing a
 curl http://localhost:8040/api/v1/metadata/ --header 'Accept: application/json' |json_pp
 ```{{exec}}
 
-The same result can be obtained by using the basic graphical frontend offered by MetaStore, which is 
-accessible via http://localhost:8040/dashboard. In the course of this tutorial we'll continue 
-focussing on accessing MetaStore via RESTful endpoints.
+The same result can in theory be obtained by using the basic graphical frontend offered by MetaStore, which is 
+accessible via http://localhost:8040/dashboard. However, as we are working within the Katacoda environment, the localhost is unaccessible. Therefore, we'll continue focusing on accessing MetaStore via RESTful endpoints.
+
+If you are following along with a local installation, then you should be able to access the UI with the above link.
