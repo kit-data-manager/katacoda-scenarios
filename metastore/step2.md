@@ -6,12 +6,7 @@ Now, we will register our first metadata schema to MetaStore. Therefor, we need 
 For the metadata record, we have to provide two properties shown in the following file:
 
 ```bash
-cat << EOF > schema-record.json
-{
-  "schemaId" : "my_first_schema",
-  "type" : "JSON"
-}
-EOF
+cat  /usr/local/bin/schema-record.json
 ```{{exec}}
 
 The first property is the ID by which the schema can be used later on, the second property 
@@ -24,29 +19,7 @@ it has to be a JSON schema. For this tutorial, we use a very simple schema even 
 complex schemas.
 
 ```bash
-cat << EOF > metadata-schema.json
-{
-  "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "title": "Person",
-  "description": "A simple person schema",
-  "type": "object",
-  "properties": {
-    "givenName": {
-      "description": "The given name of the person",
-      "type": "string"
-    }, 
-   "familyName": {
-      "description": "The family name of the person",
-      "type": "string"
-    }, 
-   "age": {
-      "description": "The (optional) age of the person",
-      "type": "integer"
-    }
-  },
-  "required": [ "givenName", "familyName" ]
-}
-EOF
+cat /usr/local/bin/pp13-basic-schema.json
 ```{{exec}}
 
 Now, that we have both input files create, we can use them to register our first schema in MetaStore.
