@@ -25,6 +25,12 @@ cat /usr/local/bin/pp13-basic-schema.json
 Now, that we have both input files create, we can use them to register our first schema in MetaStore.
 We can then send a POST request to the endpoint of the schema registry component of MetaStore:
 
+First we switch to our working directory:
+
+```bash
+cd /usr/local/bin
+```{{exec}}
+
 ```bash
 curl --location --request POST 'http://localhost:8040/api/v1/schemas/' --form 'record=@schema-record.json' --form 'schema=@pp13-basic-schema.json' |json_pp
 ```{{exec}}
