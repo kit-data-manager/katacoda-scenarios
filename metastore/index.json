@@ -21,7 +21,9 @@
     "assets": {
       "host01": [
         {"file": "schema-record.json", "target": "/root/filesystem/usr/local/bin", "chmod": "+w"},
-        {"file": "pp13-basic-schema.json", "target": "/root/filesystem/usr/local/bin", "chmod": "+w"}
+        {"file": "pp13-basic-schema.json", "target": "/root/filesystem/usr/local/bin", "chmod": "+w"},
+        {"file": "metadata-record.json", "target": "/root/filesystem/usr/local/bin", "chmod": "+w"},
+        {"file": "metadata-document.json", "target": "/root/filesystem/usr/local/bin", "chmod": "+w"}
       ]
   },
     "intro": {
