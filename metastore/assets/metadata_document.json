@@ -1,0 +1,8 @@
+{
+    "title": "My first JSON document",
+    "general": {
+      "software":"My Software"
+    },
+    "relatedImages": ["https://zenodo.org/record/7113656/files/measurement_0001.tif",
+              "https://zenodo.org/record/7113656/files/measurement_0002.tif"]
+  }

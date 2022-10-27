@@ -1,0 +1,12 @@
+{
+    "id":"pp13_first_document",
+    "relatedResource": {
+        "identifier": "anyResourceId",
+        "identifierType": "URL"
+    },
+    "schema": {
+        "identifier": "my_first_schema",
+        "identifierType": "URL"
+    },
+    "schemaVersion": 1
+}
