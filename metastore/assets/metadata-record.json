@@ -1,12 +1,32 @@
 {
-    "relatedResource": {
-        "identifier": "https://zenodo.org/record/7113656#.Y0krWS8RqUo",
-        "identifierType": "URL"
+    "id":"6fcdb291-4504-443c-a346-6a8d78c2b7eb",
+    "relatedResource":
+    {
+        "identifier":"https://zenodo.org/record/7113656#.Y0krWS8RqUo",
+        "identifierType":"URL"
     },
-    "schema": {
-        "identifier": "my_first_schema",
-        "identifierType": "URL"
+    "createdAt":"2022-10-14T09:29:51Z",
+    "lastUpdate":"2022-10-14T09:31:31.328Z",
+    "schema":
+    {
+        "identifier":"http://localhost:8040/api/v1/schemas/my_first_schema?version=1",
+        "identifierType":"URL"
     },
-    "schemaVersion": 1
+    "schemaVersion":1,
+    "recordVersion":1,
+    "acl":
+    [
+        {
+            "id":24,
+            "sid":"mehmet.soysal@kit.edu",
+            "permission":"ADMINISTRATE"
+        },
+        {
+            "id":23,
+            "sid":"anonymousUser",
+            "permission":"READ"
+        }
+    ],
+    "metadataDocumentUri":"https://matwerk.datamanager.kit.edu/api/v1/metadata/6fcdb291-4504-443c-a346-6a8d78c2b7eb?version=1",
+    "documentHash":"sha1:57f86eeb39de3fa9f5e5b64d9f560614b19848f0"
 }
-
