@@ -1,12 +1,11 @@
 {
-    "id":"pp13_first_document",
     "relatedResource": {
         "identifier": "anyResourceId",
-        "identifierType": "URL"
+        "identifierType": "INTERNAL"
     },
     "schema": {
-        "identifier": "my_first_schema",
-        "identifierType": "URL"
+        "identifier": "pp13-dummy-v2",
+        "identifierType": "INTERNAL"
     },
     "schemaVersion": 1
 }
