@@ -63,3 +63,7 @@ curl --location --request POST 'http://localhost:8040/api/v1/metadata/' --form '
 ```{{exec}}
 
 If this shows our metadata documents, then everything is correctly uploaded, and adherent to the schema we defined in the previous step.
+
+You now have the steps to set up your own instance of MetaStore. For installation instructions, view the [MetaStore Documentation](https://github.com/kit-data-manager/metastore2).
+
+-- permalinks to instances here --

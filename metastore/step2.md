@@ -1,4 +1,4 @@
-Now, we will register our first metadata schema to MetaStore. Therefore, we need two inputs:
+We will now register our first metadata schema to MetaStore. Therefore, we need two inputs:
 
 1. A schema's metadata record containing basic administrative metadata.
 2. The schema itself.
