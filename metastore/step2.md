@@ -93,7 +93,7 @@ cd /usr/local/bin/
 We can simply send a POST request to the endpoint of the schema registry component of MetaStore via the `curl` command by pointing it to out schema record and schema files:
 
 ```bash
-curl --location --request POST 'http://localhost:8040/api/v1/schemas/' --form 'record=@schema-record.json' --form 'schema=@metadata-schema.json' |json_pp
+curl --location --request POST 'http://localhost:8040/api/v1/schemas/' --form 'record=@schema-record.json' --form 'schema=@pp13-basic-schema.json' |json_pp
 ```{{exec}}
 
 The piped command `json_pp` at the end is only used to print the output in the console in a neat format ("pretty printer").
