@@ -2,10 +2,16 @@ After registering our first metadata schema, we are now ready for doing the same
 for our first metadata document. Also here, we need two inputs, which are:
 
 1. A document's metadata record containing basic administrative metadata.
-2. The metadata document.
+2. The metadata document itself.
 
 The metadata record is slightly different from the one for the metadata schema, but
-before explaining the mandatory properties, let's first create the metadata record:
+before explaining the mandatory properties, let's first view the metadata record:
+
+```bash
+cat /usr/local/bin/metadata-record.json
+```{{exec}}
+
+Which should look like this:
 
 ```
 {
@@ -22,13 +28,7 @@ before explaining the mandatory properties, let's first create the metadata reco
 }
 ```
 
-should look like:
-
-```bash
-cat /usr/local/bin/metadata-record.json
-```{{exec}}
-
-There are three main properties: 
+There are three main properties to be noted here:
 
 * `relatedResource` refers to the resource the metadata relates to. It helps you to find all metadata
 documents associated with a certain resource, either identified by a
@@ -45,28 +45,21 @@ instance holding the particular schema.
 * `schemaVersion` identifies a specific version of the selected schema. For our tutorial, we did not apply
 any update to the schema we've created. Thus, the schema version is still 1.
 
-For our tutorial, we also assign the `id` property in order to be able to retrieve the document later on. 
-However, if you omit this property, an internal UUID will be assigned by MetaStore.
+In this tutorial, we also assign the `id` property in order to be able to retrieve the document later on.
+However, if you omit this property, an internal UUID will be assigned automatically by MetaStore.
 
-After having a metadata record, we now create a metadata document which we want to upload:
+After creating or obtaining a metadata record, we now get the metadata document which we want to upload. One is already available at `/usr/local/bin/metadata-document.json`. We can view it with:
 
-```
-{
-"givenName": "John",
-"familyName": "Doe",
-"age": 42
-}
-```
-
-We can view it with: (TEST)
 ```bash
 cat /usr/local/bin/metadata-document.json
 ```{{exec}}
 
-That's it, our first metadata document which should comply with the schema we registered before.  
-Let's check, if MetaStore accepts our inputs by sending a POST request to the metadata repository
+That's it, our first metadata document is uploaded, and should comply with the schema we registered before.  
+We can check this by simply seeing if MetaStore accepts our inputs by sending a POST request to the metadata repository
 endpoint of MetaStore:
 
 ```bash
 curl --location --request POST 'http://localhost:8040/api/v1/metadata/' --form 'record=@metadata-record.json' --form 'document=@metadata-document.json' |json_pp
 ```{{exec}}
+
+If this shows our metadata documents, then everything is correctly uploaded, and adherent to the schema we defined in the previous step.
