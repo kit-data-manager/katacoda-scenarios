@@ -83,6 +83,13 @@ The schema we will use looks quite similar, and is available already in our file
 ```
 
 Now that we have both input files, we can use them to register our first schema in MetaStore.
+
+Firstly, we switch to our working directory, where the source files are located:
+
+```bash
+cd /usr/local/bin/
+```{{exec}}
+
 We can simply send a POST request to the endpoint of the schema registry component of MetaStore via the `curl` command by pointing it to out schema record and schema files:
 
 ```bash
