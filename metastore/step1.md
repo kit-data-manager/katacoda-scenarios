@@ -18,7 +18,7 @@ For listing all registered metadata schemas we can use the following 'curl' comm
 curl http://localhost:8040/api/v1/schemas/ --header 'Accept: application/json' |json_pp
 ```{{exec}}
 
-As expected, an empty result set is returned. The same is the case for listing all metadata records via
+As expected, an empty result set is returned. Don't worry if you get the message about an empty reply, simply try again in a few seconds as it takes a minute or so for the server to catch up. Similarly, we can list all metadata records via
 
 ```bash
 curl http://localhost:8040/api/v1/metadata/ --header 'Accept: application/json' |json_pp
