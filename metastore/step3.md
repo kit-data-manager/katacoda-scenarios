@@ -34,7 +34,7 @@ However, if you omit this property, an internal UUID will be assigned automatica
 After creating or obtaining a metadata record, we now get the metadata document which we want to upload. One is already available in `/usr/local/bin/metadata-document.json`. We can view it with:
 
 ```bash
-cat /usr/local/bin/metadata-document.json
+cat metadata-document.json
 ```{{exec}}
 
 That's it, our first metadata document is uploaded, and should comply with the schema we registered before.  
