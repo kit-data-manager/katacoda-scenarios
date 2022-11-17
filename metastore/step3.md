@@ -8,27 +8,10 @@ The metadata record is slightly different from the one for the metadata schema, 
 before explaining the mandatory properties, let's first view the metadata record:
 
 ```bash
-cat /usr/local/bin/metadata-record.json
+cat metadata-record.json
 ```{{exec}}
 
-Which should look like this:
-
-```
-{
-    "id":"pp13_first_document",
-    "relatedResource": {
-        "identifier": "anyResourceId",
-        "identifierType": "URL"
-    },
-    "schema": {
-        "identifier": "my_first_schema",
-        "identifierType": "URL"
-    },
-    "schemaVersion": 1
-}
-```
-
-There are three main properties to be noted here:
+There are three main properties to note here:
 
 * `relatedResource` refers to the resource the metadata relates to. It helps you to find all metadata
 documents associated with a certain resource, either identified by a
@@ -48,7 +31,7 @@ any update to the schema we've created. Thus, the schema version is still 1.
 In this tutorial, we also assign the `id` property in order to be able to retrieve the document later on.
 However, if you omit this property, an internal UUID will be assigned automatically by MetaStore.
 
-After creating or obtaining a metadata record, we now get the metadata document which we want to upload. One is already available at `/usr/local/bin/metadata-document.json`. We can view it with:
+After creating or obtaining a metadata record, we now get the metadata document which we want to upload. One is already available in `/usr/local/bin/metadata-document.json`. We can view it with:
 
 ```bash
 cat /usr/local/bin/metadata-document.json
