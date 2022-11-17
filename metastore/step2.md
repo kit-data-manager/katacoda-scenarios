@@ -6,7 +6,7 @@ We will now register our first metadata schema to MetaStore. Therefore, we need 
 For the metadata record, we have to provide two properties, which are shown in the file `schema-record.json`. We can view this file:
 
 ```bash
-cat /usr/local/bin/schema-record.json
+cd /usr/local/bin/ && cat schema-record.json
 ```{{exec}}
 
 The first property is the `ID` by which the schema can be referenced later on. The second property 
@@ -84,13 +84,7 @@ The schema we will use looks quite similar, and is available already in our file
 
 Now that we have both input files, we can use them to register our first schema in MetaStore.
 
-Firstly, we switch to our working directory, where the source files are located:
-
-```bash
-cd /usr/local/bin/
-```{{exec}}
-
-We can simply send a POST request to the endpoint of the schema registry component of MetaStore via the `curl` command by pointing it to out schema record and schema files:
+To do this, we can simply send a POST request to the endpoint of the schema registry component of MetaStore via the `curl` command by pointing it to out schema record and schema files:
 
 ```bash
 curl --location --request POST 'http://localhost:8040/api/v1/schemas/' --form 'record=@schema-record.json' --form 'schema=@pp13-basic-schema.json' |json_pp

@@ -12,7 +12,7 @@ It may take a while until the service has started. If you receive an error in th
 After startup, MetaStore offers two main endpoints: one for accessing the schema registry (/api/v1/schemas) 
 and one for accessing the metadata repository (/api/v1/metadata).
 
-For listing all registered metadata schemas we can use the following 'curl' command:
+For listing all registered metadata schemas we can use the following `curl` command:
  
 ```bash
 curl http://localhost:8040/api/v1/schemas/ --header 'Accept: application/json' |json_pp
@@ -25,6 +25,6 @@ curl http://localhost:8040/api/v1/metadata/ --header 'Accept: application/json' 
 ```{{exec}}
 
 The same result can in theory be obtained by using the basic graphical frontend offered by MetaStore, which is 
-accessible via http://localhost:8040/dashboard. However, as we are working within the Katacoda environment, the localhost is unaccessible. Therefore, we'll continue focusing on accessing MetaStore via RESTful endpoints.
+accessible via http://localhost:8040/dashboard. However, as we are working within the Killercoda environment, the localhost is unaccessible. Therefore, we'll continue focusing on accessing MetaStore via RESTful endpoints.
 
 If you are following along with a local installation, then you should be able to access the UI with the above link.
