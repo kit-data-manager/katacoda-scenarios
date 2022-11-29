@@ -18,33 +18,7 @@ After creating the first input, we now need the actual schema. According to our 
 it has to be a JSON schema. For this tutorial, we use a very simple schema even though MetaStore supports
 complex schemas.
 
-A simple schema may look like this:
-
-```
-{
-  "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "title": "Person",
-  "description": "A simple person schema",
-  "type": "object",
-  "properties": {
-    "givenName": {
-      "description": "The given name of the person",
-      "type": "string"
-    }, 
-   "familyName": {
-      "description": "The family name of the person",
-      "type": "string"
-    }, 
-   "age": {
-      "description": "The (optional) age of the person",
-      "type": "integer"
-    }
-  },
-  "required": [ "givenName", "familyName" ]
-}
-```
-
-The schema we will use looks quite similar, and is available already in our filesystem with the file name `pp13-basic-schema.json`:
+The schema we will use is already available in our filesystem with the file name `pp13-basic-schema.json`:
 
 ```
 {
